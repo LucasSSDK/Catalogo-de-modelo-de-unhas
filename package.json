@@ -1,0 +1,27 @@
+{
+  "name": "catalogo-de-modelo-de-unhas",
+  "version": "1.0.0",
+  "description": "Catalogo para modelos aplicavel em unhas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasSSDK/Catalogo-de-modelo-de-unhas.git"
+  },
+  "author": "Lucas S.S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasSSDK/Catalogo-de-modelo-de-unhas/issues"
+  },
+  "homepage": "https://github.com/LucasSSDK/Catalogo-de-modelo-de-unhas#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}
