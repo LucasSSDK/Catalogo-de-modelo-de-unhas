@@ -86,6 +86,12 @@ header img {
   margin: 0 20rem;
 }
 
+section#img1{
+  width: 100%; /*largura da imagem em 100%, ele vai ocupar 100% de 20rem que é o espaço do card, ficando responsiva*/
+  margin:1rem 1rem 1rem 1rem;/*margem 0 em cima e em baixo e auto esquerda e direita*/ 
+
+}
+
 section#cards {
   display: flex;
   justify-content: space-evenly; /*espaço entre eles*/ 
@@ -149,28 +155,88 @@ main header {
 
 
 
+section#cadastro h2{
+  text-align: center;
+  color: rgb(39, 18, 228);
+  padding-bottom: 3rem;
+  font-size: 2.5rem;
+  width: 100%;
+  
+}
+  
+  section#cadastro form input{
+    width: 50%;
+    font-size: .7rem;
+    outline: none;
+    border: solid 1px rgb(197, 197, 197);
+    padding-bottom: 1rem;
 
- /*min-width responsividade para maior que 900px*/
-@media screen and (min-width: 900px) and (max-width: 1200px){
-  nav {
-    display:  inline-block;
-    /* position: fixed; */   
-    width: 100%;
-  }
-  span.px900{
-      display: inline-block;
-  }
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+  
 }
 
-/*max-width*/
-@media screen and (max-width: 600px){
-  header {
+
+section#cadastro form label{
    
+    color: rgb(0, 0, 0);
     display: flex;
-    justify-content: space-around;
+}
+
+section#cadastro form button{
+    padding: .6rem;
+    display: flex;
+    margin: 2rem auto;
+    justify-content: center;
+    width: 30%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+section#cadastro form button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(23,120,117);
+    transform: scale(1.1);
+}
+
+
+footer {
+  text-align: center;
+  background-color: #000;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #3359ec;
+  transition: 0.5s;
+}
+
+footer p a:hover {
+  color: rgb(255, 68, 230);
+}
+
+
+ /*min-width responsividade para maior que 900px*/
+@media screen and (max-width: 1200px){
+
+section#img1{
+  width: 100%; /*largura da imagem em 100%, ele vai ocupar 100% de 20rem que é o espaço do card, ficando responsiva*/
+  margin:1rem 1rem 1rem 1rem;/*margem 0 em cima e em baixo e auto esquerda e direita*/
+} 
+
+  header {
+    justify-content: center;
     align-items: center;
     background-color: #ffef39dc;
-    padding: 3rem;
+    padding: 1rem;
     width: 100%;
   }
   
@@ -183,14 +249,61 @@ main header {
   header article p {
     color: rgb(0, 0, 0);
     font-size: 2rem;
-    padding-left: 4rem;
+    padding-left: 2rem;
   }
   
   header img {
+    width: 10%;
+    margin: 0 1rem;
+  }
+}
+
+  nav {
+    display:  inline-block;
+    /* position: fixed; */   
     width: 100%;
-    margin: 0 20rem;
+  }
+  span.px900{
+      display: inline-block;
   }
 
+
+/*max-width*/
+@media screen and (max-width: 600px){
+
+  section#img1{
+    width: 100%; /*largura da imagem em 100%, ele vai ocupar 100% de 20rem que é o espaço do card, ficando responsiva*/
+    margin:.2rem;/*margem 0 em cima e em baixo e auto esquerda e direita*/
+  } 
+
+  header {
+    justify-content: center;
+    align-items: center;
+    background-color: #ffef39dc;
+    padding: .5rem;
+    width: 100%;
+    border: solid 1rem;
+  }
+  
+  header article h2 {
+    color: rgb(230, 24, 24);
+    font-size: 2rem;
+    align-items: flex-end;
+    justify-content: center;
+
+    
+  }
+  
+  header article p {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    padding-left: 2rem;
+  }
+  
+  header img {
+    width: 0%;
+    
+  }
   nav {
     display:  inline-block;
     /* position: fixed; */   
