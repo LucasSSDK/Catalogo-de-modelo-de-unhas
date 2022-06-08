@@ -30,7 +30,7 @@ nav {
 }
 nav div img {
   width: 5rem;
-  height: auto;
+  height: 4rem;
 
   
 }
@@ -141,6 +141,15 @@ section#cards div.card h3 {
   transform: scale(1.1);
 /*para aumentar a escala de acordo com o passar do mouse*/
 }
+
+section#cards button.close:hover{
+  background-color: rgb(0, 0, 0);
+  color: rgb(23,120,117);
+  transform: scale(1.1);
+  width: 50%;
+}
+
+
 main {
   align-items: center;
   justify-content: center;

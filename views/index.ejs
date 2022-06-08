@@ -54,6 +54,8 @@
       
       
     </header>
+
+
     
  <main>
   <section id="img1">
@@ -68,12 +70,15 @@
 
         
         <h3><%= unhas.estilo%></h3>
+        
 
           <img src="<%= unhas.imagem %>" alt="Imagem">
 
-        
+
+          <h3><%= unhas.caracteristicas%></h3>
+
       </div>
-    
+   
     <% }) %>
   
     
@@ -97,9 +102,14 @@
             
             <label for="imagem">Link da Imagem: </label>
             <input type="imagem" name="imagem" id="imagem" placeholder="Link da imagem da unha" required>
+
+            <label for="caracteristicas">Caracteristicas: </label>
+            <input type="text" name="caracteristicas" id="caracteristicas" placeholder="Digite as caracteriscas do estilo" required>
             
             <button id="btnCadastrar" type="submit">Adicionar</button>
-            
+            <button class="close" type="reset">x</button>
+
+    
             
         </form>
 </main>
