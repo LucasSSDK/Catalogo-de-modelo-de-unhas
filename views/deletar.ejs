@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <%-include('./components/head')%>
+
+<body>
+    <header>
+        <h1>Modelos de unhas</h1>
+        <%-include('./components/nav')%>
+    </header>
+    <main>
+        <div class="container">
+
+            <form method="POST" action="/deletar/<%= unhas.id %>">
+                <div class="item">
+                    <h2>Dejesa realmente deletar?</h2>
+                    <span><%= unhas.nome %></span>
+                </div>
+                <div class="item">
+                    <img src="<%= unhas.imagem %>" alt="capa do unhas">
+                </div>
+                <div class="item">
+                    <a href="/filmes/<%= unhas.id %>">Cancelar</a>
+                    <Button type="submit">confirmar Exclusão</Button>
+                </div>
+                <!-- <input type="hidden" id="teste" name="teste"> -->
+            </form>
+        </div>
+    </main>
+    
+        <%-include('./components/footer')%>
+    
+    <script src="/JS/script.js"></script> 
+</body>
+</html>

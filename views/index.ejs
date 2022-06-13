@@ -1,47 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="/css/style.css" />
-
-    <title>Modelo-de-Unhas</title>
-    <link
-      rel="shortcut icon"
-      href="https://static.vecteezy.com/ti/vetor-gratis/p3/2275254-mao-feminina-com-unhas-pintadas-de-manicura-acabadas-vetor.jpg"
-    />
-  </head>
+  <%-include('./components/head')%>
 
 
   <body>
-    <nav>
-      <!--menu-->
-      <div>
-        <img src="/img/unhas.gif" class="menu" alt="Imagem do Menu de unhas">
-      </div> 
-
-        <ul>
-          <li>
-            <a href="#">
-              <h1> Nails Model </h1></a>
-          </li>
-          <li>
-            <a href="#">Inicio</a>
-          </li>
-
-          <li>
-            <a href="#cards">Estilos de unhas</a>
-          </li>
-
-          <li>
-            <a href="#cadastro"> #Cadastre-se</a>
-          </li>
-
-        </ul>
-       
-    </nav>
+   <%-include('./components/nav')%>
 
     
     <header> <!--inicio da pagina-->
@@ -75,7 +38,7 @@
           <img src="<%= unhas.imagem %>" alt="Imagem">
 
 
-          <h3><%= unhas.caracteristicas%></h3>
+          <!-- <h3><%= unhas.caracteristicas%></h3> -->
 
       </div>
    
@@ -84,44 +47,10 @@
     
  
   </section>
-
-
-  <section id="cadastro"> <!--adicionar novos estilos-->
-
-        
-    <h2>Adicione um novo estilo de unha</h2>
-        
-
-    <form action="/create" method="POST" onsubmit="adicionar()">
-
-        
-            <label for="estilo">Estilo: </label>
-            <input type="text" name="estilo" id="estilo" placeholder="Digite o estilo de unha" required>
-        
-          
-            
-            <label for="imagem">Link da Imagem: </label>
-            <input type="imagem" name="imagem" id="imagem" placeholder="Link da imagem da unha" required>
-
-            <label for="caracteristicas">Caracteristicas: </label>
-            <input type="text" name="caracteristicas" id="caracteristicas" placeholder="Digite as caracteriscas do estilo" required>
-            
-            <button id="btnCadastrar" type="submit">Adicionar</button>
-            <button class="close" type="reset">x</button>
-
-    
-            
-        </form>
-</main>
-
-<footer>
-  <p>
-       <a href="" target="_blank"> github Eng.Lucas</a>
-  </p>
-</footer>
-
-
-    <script src="js/script.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ </main>
   </body>
 </html>
+
+
+
+ 
